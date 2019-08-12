@@ -51,21 +51,61 @@ p {
 }
 
 /* ヘッダー */
+.navbar {
+  background-color: #0000FF;
+}
 
 #logo {
+  float: left;
+  margin-top:10px;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  letter-spacing: -1px;
+  font-weight: bold;
+  font-style: italic; 
+}
+
+#logo:hover {
+  color: 	#808080;
+  text-decoration: none;
+}
+
+#header-list {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
+  font-style: italic; 
 }
 
-#logo:hover {
-  color: #fff;
+#header-list:hover {
+  color: 	#808080;
   text-decoration: none;
+}
+/*ドロップダウン*/
+.dropdown {
+  color: #fff;
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  font-weight: bold;
+  font-style: italic; 
+  
+}
+
+.dropdown:hover {
+  background: transparent;
+  color: 	#808080;
+  text-decoration: none;
+}
+
+/*ヘッダーの中の文字の装飾*/
+.dropdown-header {
+  background-color: #808080;
 }
 
 /* デバッグウインドウ */
@@ -73,8 +113,9 @@ p {
 .debug_dump {
   clear: both;
   float: left;
-  width: 100%;
+  width: 50%;
   margin-top: 45px;
+  margin-left: 100px;
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
@@ -95,4 +136,14 @@ p {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/*タスクアップ枠の背景色*/
+#top-main {
+  background-color: #FFF;
+}
+
+/*ログインボタンの隙間*/
+.btn {
+  margin-top: 5px;
 }
