@@ -1,11 +1,10 @@
+<% provide(:title, 'edit Task') %>
 
-<% provide(:title, 'New Task') %>
-
-<h1>タスク新規作成</h1>
+<h1>タスク編集</h1>
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-     <%= form_with(model: @task, url: user_tasks_path(@user), local: true) do |f| %>
+     <%= form_with(model: @task, url: user_tasks_path(@user,@task), method: :patch, local: true) do |f| %>
       <%= render partial: 'shared/error_messages' %>
 
       <%= f.label :name, class: "label-form" %>
@@ -14,8 +13,8 @@
       <%= f.label :description, class: "label-form" %>
       <%= f.text_area :description, rows: 5, class: "form-control" %>
 
-      <%= f.submit "新規登録", class: "btn btn-lg btn-primary btn-form" %>
+      <%= f.submit "更新", class: "btn btn-default1 btn-primary btn-form" %>
+      <%= f.submit "キャンセル", class: "btn btn-default btn-default btn-form" %>
     <% end %>
   </div>
 </div>
-
