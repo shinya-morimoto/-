@@ -1,13 +1,15 @@
 class CreateTasks < ActiveRecord::Migration[5.1]
   def change
     create_table :tasks do |t|
-      t.integer :task_id
       t.string :name
-      t.integer :user_id
+      t.text :content
       t.integer :task_id
-      t.datetime :creatred_at
+      t.datetime :created_at
+      t.datetime :updated_at
       t.datetime :started_at
       t.datetime :finished_at
+      t.string :note
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
