@@ -29,6 +29,7 @@
 #table-users {
   td {
     vertical-align: middle;
+    width: 100%;
   }  
 }
 
@@ -36,9 +37,8 @@
   Background-color: #EEEEEE;
   text-align: center;
 }
-.table {
-  width: 100%;
-}
-.btn btn-danger {
- vertical-align: right;
+
+
+.right-table {
+ width: 100px;
 }
