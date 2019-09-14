@@ -3,6 +3,7 @@
 .user-table {
   vertical-align: middle;
   text-align: center;
+  width: 100%;
 }
 
 /* 入力フォーム */
@@ -21,4 +22,23 @@
 
 .btn-user--edit {
   margin-top: 10px;
+}
+
+/* ユーザー一覧ページ */
+
+#table-users {
+  td {
+    vertical-align: middle;
+  }  
+}
+
+.firstline {
+  Background-color: #EEEEEE;
+  text-align: center;
+}
+.table {
+  width: 100%;
+}
+.btn btn-danger {
+ vertical-align: right;
 }

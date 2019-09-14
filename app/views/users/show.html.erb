@@ -1,23 +1,32 @@
 <% provide(:title, @user.name) %>
+<div class="container">
 
-<div class="row">
-  <div class="col-md-10 col-md-offset-1">
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th><%= User.human_attribute_name :name %></th>
-          <th><%= User.human_attribute_name :email %></th>
-          <th><%= User.human_attribute_name :created_at %></th>
-        </tr>
-      </thead>
-
+<h1>プロフィール</h1>
+    <div class="row">
+  <div class="col-md-12 col-md-offset-3">
+    <table class="table table-bordered" id="table-user">
       <tbody>
         <tr>
-          <td><%= @user.name %></td>
-          <td><%= @user.email %></td>
-          <td><%= @user.created_at %></td>
+          <td class=firstline>ID</td>
+          <td><%= @user.id %></td>
         </tr>
+        <tr>
+          <td class=firstline>名称</td>
+          <td><%= @user.name %></td>
+        </tr>
+        
+         <tr>
+          <td class=firstline>詳細</td>
+          <td><%= @user.email %></td>
+         </tr>
+        
+         <tr>
+          <td class=firstline>作成日</td>
+          <td><%= @user.created_at %></td>
+         </tr> 
+        
       </tbody>
     </table>
   </div>    
+</div>
 </div>
